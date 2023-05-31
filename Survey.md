@@ -27,6 +27,10 @@
 3. Button
 ## Tech stack:
 1. Chakra-UI
+  - Popover
+  - Drawer
+  - Button
+  - Modal
 
 ## Wire frame
 [Link](https://whimsical.com/chatgpt-assistant-KgPJc77uSy8UtyDuRmmi67)
