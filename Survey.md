@@ -3,7 +3,7 @@
 ## 需要內容拆解:
 ### Prompt sidebar
 - 負責顯示定義好的 prompt template:
-  1.  需要確定怎麼跟 ChatGPT 頁面的 Message box 嫁接，例如串接上下文，將內容一併傳送到 GPT message box
+  1. 需要確定怎麼跟 ChatGPT 頁面的 Message box 嫁接，例如串接上下文，將內容一併傳送到 GPT message box
     - 呼叫時展開一個 Dialog 輸入框，並在點擊送出後抓取 ChatGPT message box 並將內容植入
   2.  Split feature type
     - 需要決定 sidebar 到底要放幾種類型的按鈕
@@ -11,14 +11,16 @@
       2. Quick response
 ### Template Prompt setting (Dialog)
 - Prompt question:
-  1.  處理 Template 儲存問題，參照套件存放於 local storage，需要評估一下是否會有潛在問題
-  2.  Template Editor 資料流梳理 (CRUD)
-    - Editor 的資料以及 Prompt active 時的資料獲取
+  1. 處理 Template 儲存問題，參照套件存放於 local storage，需要評估一下是否會有潛在問題
+    - 得知 Chrome 有提供屬於瀏覽器版本的 chrome.storage, chrome.localStorage
+  2. Q: Template Editor 資料流梳理 (CRUD)
+    - A: Editor 的資料以及 Prompt active 時的資料獲取
 - Quick response: (Ex: continue)
   - 預先設定的定式回覆
 ### 可以延伸的
 1. Shortcuts and display
 2. Page download
+3. Wrapper size
 ---
 ## UI:
 ### 已確定：
