@@ -1,5 +1,8 @@
 ## Chrome extension research 紀錄
  因為自己使用的 [第三方套件](https://github.com/JiaHongL/Chat-GPT-Custom-Prompt-Extension) 出現 bug ，源自於套件所抓取的 html element name 變更了，同時我並不需要原作者提供的的大部分功能加上使用量比較大，所以決定自己寫一版陽春點的自用，至少修 bug 不用等
+## Question 
+- [ ] 解決 manifest.json entry point 問題，如何將 React 渲染的東西植入
+- [ ] 
 ## 需要內容拆解:
 ### Sidebar
 - 負責顯示定義好的 prompt template:
@@ -33,6 +36,7 @@
   - Drawer
   - Button
   - Modal
+  - Form Control
 
 ## Wire frame
 [Link](https://whimsical.com/chatgpt-assistant-KgPJc77uSy8UtyDuRmmi67)
