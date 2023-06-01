@@ -2,7 +2,8 @@
  因為自己使用的 [第三方套件](https://github.com/JiaHongL/Chat-GPT-Custom-Prompt-Extension) 出現 bug ，源自於套件所抓取的 html element name 變更了，同時我並不需要原作者提供的的大部分功能加上使用量比較大，所以決定自己寫一版陽春點的自用，至少修 bug 不用等
 ## Question 
 - [ ] 解決 manifest.json entry point 問題，如何將 React 渲染的東西植入
-- [ ] 
+- [ ] 解決渲染頁面導入問題，可能會有 z-index 狀況需要處理，必須先確認作法
+- [ ] 解決網域啟用問題 (ChatGPT only)
 ## 需要內容拆解:
 ### Sidebar
 - 負責顯示定義好的 prompt template:
@@ -16,8 +17,8 @@
 - Prompt question:
   1. 處理 Template 儲存問題，參照套件存放於 local storage，需要評估一下是否會有潛在問題
     - 得知 Chrome 有提供屬於瀏覽器版本的 chrome.storage, chrome.localStorage，同時具備將資料綁定在 Google account 上的好處、儲存量也比 localStorage 大
-  - Q: Template Editor 資料流梳理 (CRUD)
-    -  A: Editor 的資料以及 Prompt active 時的資料獲取
+  2. Template Editor 資料流梳理 (CRUD)
+    - 透過 useContext, useReducer 處理整體 CRUD 的問題
 - Quick response: (Ex: continue)
   - 預先設定的定式回覆
 ### 可以延伸的
