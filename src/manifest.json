@@ -3,6 +3,12 @@
   "name": "ChatGPT prompt template assistant",
   "description": "Custom your prompt template",
   "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": "https://chat.openai.com/*"
+      "js":""
+    }
+  ],
   "action": {
     "default_popup": "index.html"
   }
