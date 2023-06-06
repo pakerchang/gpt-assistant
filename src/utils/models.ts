@@ -1,17 +1,10 @@
-export interface DataSchema {
-  promptData: PromptDataType;
-  quickRespData: QuickRespDataType;
-}
+export interface DataSchema {}
 
 export interface PromptDataType {
   itemName: string;
-  prefixContent: string;
-  content: string;
-  suffixContent: string;
-  isActive: boolean;
-}
-
-export interface QuickRespDataType {
-  itemName: string;
+  prefixContent?: string;
+  content?: string;
+  suffixContent?: string;
+  isPrompt: boolean;
   isActive: boolean;
 }
