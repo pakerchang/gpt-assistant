@@ -1,7 +1,14 @@
-// import React from "react";
+import { Box, FormControl, FormLabel, Input } from "@chakra-ui/react";
 
-function PromptForm() {
-  return <div>PromptForm</div>;
+function QuickRepForm() {
+  return (
+    <Box>
+      <FormControl>
+        <FormLabel>Quick Response</FormLabel>
+        <Input placeholder="Ex: Continue, Provide Code" />
+      </FormControl>
+    </Box>
+  );
 }
 
-export default PromptForm;
+export default QuickRepForm;
