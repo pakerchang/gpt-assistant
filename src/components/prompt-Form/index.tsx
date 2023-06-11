@@ -9,14 +9,14 @@ function PromptForm({ isCreate }: PropmptFormProps) {
     <Box display="flex" flexDirection="column" justifyContent="space-around">
       <FormControl mb="40px">
         <FormLabel>Prefix Name: </FormLabel>
-        <Input placeholder="Prefix Name" />
+        <Input placeholder="Prefix Name" disabled={!isCreate} />
       </FormControl>
       <FormControl h="150px">
-        <Textarea h="100%" placeholder="Prompt Content" disabled={isCreate} />
+        <Textarea h="100%" placeholder="Description..." disabled={isCreate} />
       </FormControl>
       <FormControl mt="40px">
         <FormLabel>Suffix Name: </FormLabel>
-        <Input placeholder="Suffix Name" />
+        <Input placeholder="Suffix Name" disabled={!isCreate} />
       </FormControl>
     </Box>
   );
