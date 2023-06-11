@@ -25,6 +25,14 @@ const theme = extendTheme({
         }),
       },
     },
+    Drawer: {
+      baseStyle: {
+        dialog: {
+          bg: "transparent",
+          boxShadow: "none",
+        },
+      },
+    },
   },
 });
 
