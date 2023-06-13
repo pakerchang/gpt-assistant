@@ -26,10 +26,17 @@ const theme = extendTheme({
       },
     },
     Drawer: {
-      baseStyle: {
-        dialog: {
-          bg: "transparent",
-          boxShadow: "none",
+      variants: {
+        customModal: {
+          dialog: {
+            bg: "transparent",
+            boxShadow: "none",
+            pointerEvents: "auto",
+          },
+          dialogContainer: {
+            bg: "transparent",
+            pointerEvents: "none",
+          },
         },
       },
     },
