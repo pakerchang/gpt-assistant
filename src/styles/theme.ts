@@ -36,6 +36,7 @@ const theme = extendTheme({
           dialogContainer: {
             bg: "transparent",
             pointerEvents: "none",
+            w: "auto",
           },
         },
       },

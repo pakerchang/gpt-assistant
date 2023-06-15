@@ -1,4 +1,7 @@
-export interface DataSchema {}
+export interface GPTAssistantDataType {
+  promptData?: PromptDataType[];
+  quickRepData?: PromptDataType[];
+}
 
 export interface PromptDataType {
   itemName: string;
