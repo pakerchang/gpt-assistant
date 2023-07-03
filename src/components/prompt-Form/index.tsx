@@ -5,6 +5,8 @@ interface PropmptFormProps {
 }
 
 function PromptForm({ isCreate }: PropmptFormProps) {
+  console.log("testing");
+
   return (
     <Box display="flex" flexDirection="column" justifyContent="space-around">
       <FormControl mb="40px">
